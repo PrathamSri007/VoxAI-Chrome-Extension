@@ -1,0 +1,108 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  width: 300px;
+  height: 400px;
+}
+
+h1 {
+  font-size: clamp(1.2rem, 4vw, 2rem); 
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #00ffcc;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+button {
+  background: linear-gradient(135deg, #00ffcc, #0099ff);
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 8px;
+  font-weight: bold;
+  width: 80%;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0099ff, #00ffcc);
+  transform: scale(1.05);
+}
+
+.input-container, .button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 80%;
+  margin: 8px 0;
+}
+
+.button-container {
+  justify-content: space-between;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 80%;
+  margin: 8px 0;
+}
+
+input {
+  background-color: #1e1e1e;
+  border: 1px solid #00ffcc;
+  color: #ffffff;
+  padding: 8px;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+input::placeholder {
+  color: #888;
+}
+
+p {
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  color: #00ffcc;
+  margin-top: 10px;
+}
+
+#llmresponse {
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  color: #ffffff;
+}
+
+span {
+  font-weight: bold;
+  color: #00ffcc;
+}
+
+.button-container button {
+  width: 48%;
+}
+
+#pause-resume {
+  order: -1;
+}

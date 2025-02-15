@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Never Gonna Give You Up",
+    "version": "1.0",
+    "description": "An AI-powered assistant that automates tasks like form filling, reminders, screenshots, and text summarization using voice commands and AI.",
+    "permissions": ["storage", "tabs", "activeTab", "scripting"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "background": {
+      "service_worker": "background.js",
+      "type": "module"
+    },
+    "host_permissions": ["https://*/*", "http://*/*"],
+    "content_scripts": [
+      {
+        "matches": ["https://*/*", "http://*/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
